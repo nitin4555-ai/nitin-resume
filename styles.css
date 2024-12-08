@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f9f9f9, #eef2f3);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #ff6f61;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: linear-gradient(45deg, #ff6f61, #ffcc61);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: header-bounce 2s infinite alternate;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .header p {
+    margin: 5px 0;
+  }
+  
+  /* Section Styles */
+  section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  
+  section h2 {
+    margin-top: 0;
+    color: #3e8ed0;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    background: #3e8ed0;
+    color: #fff;
+    padding: 20px; /* Increased padding for more space */
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px; /* Added gap between content and footer */
+  }
+  
+  /* Animations */
+  @keyframes header-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1.5s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    section:last-of-type {
+      margin-bottom: 60px; /* Adds extra space below the "Passions" section */
+    }
+  }
+  
